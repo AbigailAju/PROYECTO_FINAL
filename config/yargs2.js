@@ -19,7 +19,7 @@ const argv = require('yargs')
     })
 
     .check((argv, options) => {
-        if (isNAN(argv.b)) {
+        if (isNaN(argv.b)) {
             throw 'La base tiene que se ser un número'
         }
         return true;
